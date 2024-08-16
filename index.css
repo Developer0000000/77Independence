@@ -22,11 +22,13 @@
     cursor: auto;
 }
 
-*::-webkit-scrollbar,
-::-moz-scrollbar,
-::-ms-scrollbar,
-::-o-scrollbar {
+*::-webkit-scrollbar{
     display: none;
+}
+
+::selection {
+    background-color: var(--green);
+    color: var(--white);
 }
 
 :root {
