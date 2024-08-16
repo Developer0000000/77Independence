@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const images = [];
     const cloudinaryBaseURL = "https://res.cloudinary.com/dje7ukgcq/image/upload/";
     const folder = "frames";
-    const batchSize = 300;
+    const batchSize = 1200;
     let currentBatch = 1;
     let allImagesLoaded = false;
 

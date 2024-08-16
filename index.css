@@ -22,7 +22,10 @@
     cursor: auto;
 }
 
-*::-webkit-scrollbar {
+*::-webkit-scrollbar,
+::-moz-scrollbar,
+::-ms-scrollbar,
+::-o-scrollbar {
     display: none;
 }
 
