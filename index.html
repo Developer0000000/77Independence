@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>77th Anniversary of Pakistan</title>
+    <link rel="shortcut icon" href="./assets/svgs/pakistanFlag.svg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.9/dist/lenis.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body theme="white">
+
+    <main>
+
+        <!-- % btn_down -->
+        <div
+            class="fixed bottom-10 right-8 sm:right-14 rotate-0 z-[99999] btn_down cursor-pointer overflow-y-hidden opacity-0">
+            <button class="btn_circle rounded-full border border-black w-12 h-12 flex justify-center items-center">
+                <i class="ri-arrow-down-line text-4xl text-black font-thin stroke-0"></i>
+            </button>
+        </div>
+
+        <!--% preloader -->
+        <section
+            class="w-full flex justify-center items-center fixed top-0 left-0 z-50 h-screen overflow-hidden preloader_sec">
+            <div
+                class="loader-wrap absolute z-30 w-full h-[100vh] flex justify-center items-center bg-transparent overflow-hidden">
+                <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" class="absolute top-0 w-screen h-[110vh]">
+                    <path id="svg" fill="#fff" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+                </svg>
+            </div>
+
+            <div
+                class="title absolute top-[48%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center text-white preloader_text">
+
+                <div class="relative z-40">
+                    <img loading="lazy"
+                        class="preloader_img_1 absolute top-10 left-20 size-40 hidden sm:inline-block opacity-0 scale-0 transition-all dest"
+                        src="./assets/svgs/pakistanFlag.svg" alt="">
+                    <h1 class="text-[43vw] leading-[1.7] sm:text-[30vw] sm:leading-[30vw] dancing_font"></h1>
+                    <img loading="lazy"
+                        class="preloader_img_2 absolute top-10 right-20 size-40 hidden sm:inline-block opacity-0 scale-0 transition-all duration-75 dest"
+                        src="./assets/svgs/pakistanFlag.svg" alt="">
+                </div>
+
+                <div class="center_flag bg-red-300 w-full h-full">
+                    <img loading="lazy"
+                        class="preloader_img_3 absolute opacity-0 -top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 size-60 pl-2 -z-10"
+                        src="./assets/svgs/pakistanFlag.svg" alt="">
+                    <div
+                        class="preloader_img_3_line w-[3px] h-[50vh] sm:h-[41vh] bg-black -z-20 absolute -top-1/2 left-1/2 transform -translate-x-1/2 rounded-full opacity-0">
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img loading="lazy"
+                        class="preloader_img_4 absolute bottom-10 left-20 size-40 hidden sm:inline-block opacity-0 scale-0 transition-all dest"
+                        src="./assets/svgs/pakistanFlag.svg" alt="">
+                    <h2 class="text-[20vw] dancing_font sm:leading-[20vw] -translate-y-10 text_stroke"></h2>
+                    <img loading="lazy"
+                        class="preloader_img_5 absolute bottom-10 right-20 size-40 hidden sm:inline-block opacity-0 scale-0 transition-all duration-75 dest"
+                        src="./assets/svgs/pakistanFlag.svg" alt="">
+                </div>
+
+            </div>
+
+            <div
+                class="loader-wrap2 absolute z-10 w-full h-[100vh] flex justify-center flex-col-reverse items-center bg-transparent overflow-hidden">
+                <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" class="absolute top-0 w-screen h-[110vh]">
+                    <path id="svg2" fill="#00401A" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- % hero -->
+        <section
+            class='panel panel_1 w-full min-h-screen relative bg-[url("https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804610/assets/images/green_hill1_ntj8gr.png")] bg-no-repeat bg-cover z-10 overflow-hidden'
+            style="background-position: 100% 6%">
+
+            <div class="rhythm_wrapper overflow-hidden w-fit ml-14 mt-2">
+                <div class="rhythm text-2xl flex items-center whitespace-nowrap infiniteImg w-fit">
+                    <i class="ri-rhythm-fill"></i>
+                    <i class="ri-rhythm-fill"></i>
+                    <i class="ri-rhythm-fill"></i>
+                </div>
+                <div class='poster rotate-90 absolute -left-2.5 -top-2'>
+                    <img loading="lazy" class='w-16' src="./assets/icons/poster.png" alt="">
+                    <span
+                        class='text-[10px] text-center whitespace-nowrap font-bold absolute top-[10%] left-1/2 transform -translate-x-1/2'>👆Play</span>
+                </div>
+            </div>
+
+            <audio class="insect_chirping" controls hidden autoplay>
+                <source src="./assets/audios/insect_chirping.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class='minar_poster absolute -top-4 left-1/2 transform rotate-180 -translate-x-1/2'>
+                <img loading="lazy" class='w-20' src="./assets/icons/poster.png" alt="">
+                <span
+                    class='text-xl font-bold absolute top-1 left-1/2 transform -translate-x-1/2 rotate-180'>Scroll</span>
+            </div>
+
+            <div class="ready_to_explore z-[120] h-screen sm:h-auto flex flex-col items-center justify-center">
+                <div class="flex flex-col sm:flex-row items-center sm:gap-12">
+                    <h1
+                        class="text-[25vw] leading-[25vw] sm:text-[20vw] sm:leading-[20vw] transform origin-[10%_50%] -rotate-90 tracking-tighter font-bold w-full text-center font_bodoni opacity-0 relative -z-10">
+                        Ready
+                    </h1>
+                    <h2
+                        class="text_stroke_green dancing_font text-[25vw] leading-[25vw] sm:text-[20vw] sm:leading-[20vw] tracking-tighter font-bold w-full text-center translate-x-[150%] opacity-0">
+                        To
+                    </h2>
+                </div>
+                <h3
+                    class="text-[25vw] leading-[25vw] sm:text-[20vw] sm:leading-[20vw] tracking-tighter font-bold w-full text-center font_bodoni rotate-[30deg] origin-[0%_50%] opacity-0 relative -z-10">
+                    Explore?
+                </h3>
+            </div>
+
+            <div
+                class="minar_circ size-40 bg-white rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-0 z-[110]">
+            </div>
+
+            <div
+                class='minar absolute -top-full opacity-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-0'>
+                <img loading="lazy" class='sm:h-[87vh] h-[82vh] object-cover object-center w-full'
+                    src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804615/assets/images/minar_e_pakistan_zjizji.png"
+                    alt="">
+            </div>
+
+            <div class="minar_text -z-20">
+                <h1
+                    class="txt1 text-9xl font-bold w-fit whitespace-nowrap text-center bg-[#f8f8f8] absolute top-1/2 left-full transform -translate-y-1/2 -z-10 rounded px-6">
+                    On the 77<sup>th</sup> Anniversary of Pakistan,
+                </h1>
+
+                <h1
+                    class="txt2 text-9xl hidden sm:block font-bold w-fit whitespace-nowrap text-center bg-[#f8f8f8] z-20 sm:-z-20 rounded px-6 absolute bottom-[-220%] right-[-6%] transform rotate-90 text_stroke_green pb-6">
+                    We're going bigger than ever!
+                </h1>
+
+                <h1
+                    class="txt2 text-9xl sm:hidden font-bold w-fit whitespace-nowrap text-center bg-[#f8f8f8] z-20 sm:-z-20 rounded px-6 absolute bottom-[-220%] -translate-x-1/2 sm:translate-x-0 left-1/2 transform rotate-90 text_stroke_green pb-6">
+                    We're going bigger than ever!
+                </h1>
+
+                <h1
+                    class="txt3 text-9xl font-bold w-fit whitespace-nowrap text-center bg-[#f8f8f8] z-20 sm:-z-20 rounded px-6 absolute top-[-250%] left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-[-20%] transform -rotate-90">
+                    Let's make Pakistan a better place!
+                </h1>
+
+                <h1
+                    class="txt4 text_stroke_green pb-6 text-9xl font-bold w-fit whitespace-nowrap text-center bg-[#f8f8f8] -z-20 rounded px-6 absolute top-1/2 right-full transform -translate-y-1/2 rotate-180">
+                    Come & join us in grand celebration!
+                </h1>
+
+            </div>
+
+            <div class='bridge absolute bottom-0 left-[49.5%] transform -translate-x-1/2'>
+                <img loading="lazy" class='max-w-xs sm:w-60 sm:max-w-full'
+                    src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804598/assets/images/bridge1_ctxjmq.png"
+                    alt="">
+            </div>
+
+            <div class="bushes inline sm:hidden">
+                <div class='bush bush_right absolute bottom-4 -z-10 right-0'>
+                    <img loading="lazy" class='bridge w-28'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804596/assets/images/bush_dwskt6.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_left absolute bottom-4 -z-10 left-0'>
+                    <img loading="lazy" class='bridge w-28'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804600/assets/images/bush1_ah5vei.png"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="bushes hidden sm:inline">
+                <div class='bush bush_right absolute bottom-6 right-10'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804596/assets/images/bush_dwskt6.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_left absolute bottom-10 left-10'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804600/assets/images/bush1_ah5vei.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_right absolute bottom-6 right-[5rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804596/assets/images/bush_dwskt6.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_left absolute bottom-10 left-[5rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804600/assets/images/bush1_ah5vei.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_right absolute bottom-6 right-[7.5rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804596/assets/images/bush_dwskt6.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_left absolute bottom-10 left-[7.5rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804600/assets/images/bush1_ah5vei.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_right absolute bottom-6 right-[10rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804596/assets/images/bush_dwskt6.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_left absolute bottom-10 left-[10rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804600/assets/images/bush1_ah5vei.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_right absolute bottom-6 right-[12.5rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804596/assets/images/bush_dwskt6.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_left absolute bottom-10 left-[12.5rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804600/assets/images/bush1_ah5vei.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_right absolute bottom-6 right-[15rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804596/assets/images/bush_dwskt6.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_left absolute bottom-10 left-[15rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804600/assets/images/bush1_ah5vei.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_right absolute bottom-6 right-[17.5rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804596/assets/images/bush_dwskt6.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_left absolute bottom-10 left-[17.5rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804600/assets/images/bush1_ah5vei.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_right absolute bottom-6 right-[20rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804596/assets/images/bush_dwskt6.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_left absolute bottom-10 left-[20rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804600/assets/images/bush1_ah5vei.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_right absolute bottom-6 right-[22.5rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804596/assets/images/bush_dwskt6.png"
+                        alt="">
+                </div>
+
+                <div class='bush bush_left absolute bottom-10 left-[22.5rem]'>
+                    <img loading="lazy" class='bridge w-32'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804600/assets/images/bush1_ah5vei.png"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="butterfly">
+
+                <img loading="lazy" class='butterfly_img w-6 absolute top-5 left-1/2 transform -translate-x-1/2'
+                    src="./assets/icons/butterfly1.png" alt="">
+
+                <img loading="lazy" class='butterfly_img w-6 absolute bottom-5 left-1/2 transform -translate-x-1/2'
+                    src="./assets/icons/butterfly3.png" alt="">
+
+                <img loading="lazy"
+                    class='butterfly_img w-6 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'
+                    src="./assets/icons/butterfly.png" alt="">
+
+                <img loading="lazy" class='butterfly_img w-6 absolute bottom-5 left-20 rotate-45'
+                    src="./assets/icons/butterfly1.png" alt="">
+
+                <img loading="lazy" class='butterfly_img w-6 absolute bottom-5 right-20 -rotate-45'
+                    src="./assets/icons/butterfly2.png" alt="">
+
+                <img loading="lazy" class='butterfly_img w-6 absolute top-20 right-20 -rotate-90'
+                    src="./assets/icons/butterfly3.png" alt="">
+
+                <img loading="lazy" class='butterfly_img w-6 absolute top-20 left-20'
+                    src="./assets/icons/butterfly4.png" alt="">
+
+                <img loading="lazy" class='butterfly_img w-6 absolute bottom-1/2 right-[20%] -rotate-45'
+                    src="./assets/icons/butterfly2.png" alt="">
+
+                <img loading="lazy" class='butterfly_img w-6 absolute bottom-1/2 left-[20%] -rotate-45'
+                    src="./assets/icons/butterfly2.png" alt="">
+
+            </div>
+
+        </section>
+
+        <!-- % frames -->
+        <section class="panel panel_2 w-full relative bg-zinc-900 cursor-none">
+            <div class="canvas_wrapper relative top-0 left-0 w-full h-[2000vh]">
+                <div class="w-full sticky top-0 left-0 h-screen">
+                    <canvas class="h-screen w-full"></canvas>
+                </div>
+            </div>
+            <div
+                class="fixed size-20 top-0 left-0 bg-[#00401A] rounded-tr-[0.5rem] rounded-bl-[0.5rem] rounded-tl-[7rem] rounded-br-[7rem] text-sm text-white text-center z-50 mousemove_box hidden">
+                <span
+                    class="dancing_font absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-45 transition-all will-change-transform">Scroll
+                    to Play</span>
+            </div>
+            <div class='poster_canvas hidden rotate-90 fixed -left-10 top-4 w-28'>
+                <img loading="lazy" class='w-full' src="./assets/icons/poster.png" alt="">
+                <span class='text-[10px] text-center font-bold absolute top-2 rotate-180'>Scroll Smooth for better
+                    experience</span>
+            </div>
+
+            </h1>
+
+        </section>
+
+        <!-- % about pakistan -->
+        <section class="slides w-full min-h-screen relative flex flex-nowrap overflow-hidden">
+
+            <section class="slide slide_1 flex-[1_0_100%] w-full relative">
+                <div class="w-full h-full flex items-center justify-center">
+                    <h1
+                        class="cultures_text text-[16vw] z-50 leading-[20vw] sm:text-[10vw] sm:leading-[10vw] font-bold w-fit absolute top-1/2 transform -translate-y-1/2 rounded pb-7 text_stroke_green uppercase text-center">
+                        <span>4 largest</span><br>
+                        <span>cultures</span><br>
+                        <span>in Pakistan!</span>
+                    </h1>
+                </div>
+            </section>
+
+            <section class="slide slide_2 flex-[1_0_100%] w-full relative">
+                <div
+                    class="punjabi_txt absolute top-[170%] -left-[45%] sm:-left-[15%] transform -translate-y-1/2 rotate-90 opacity-0">
+                    <h1 class="text-8xl font_bodoni uppercase">punjabi</h1>
+                </div>
+
+                <div class="punjabi sm:mt-0 mt-10">
+                    <div
+                        class="punjabi_content flex sm:items-center items-end flex-col sm:flex-row sm:justify-evenly justify-center">
+
+                        <div class="punjabi_img wiggle_effect">
+                            <img loading="lazy" class="w-40 h-52 object-cover object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804631/assets/images/punjabi/punjabi_boy1_wcurrq.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="punjabi_img">
+                            <img loading="lazy" class="w-44 sm:mt-0 mt-6 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804634/assets/images/punjabi/punjabi_girl1_zmjcnb.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="punjabi_img hidden sm:block">
+                            <img loading="lazy" class="w-60 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804632/assets/images/punjabi/punjabi_boy2_ii0ckn.jpg"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="punjabi_content flex items-center justify-end sm:justify-evenly">
+
+                        <div class="punjabi_img hidden sm:block">
+                            <img loading="lazy" class="w-40 object-cover object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804636/assets/images/punjabi/punjabi_girl2_jlc8z8.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="punjabi_img">
+                            <img loading="lazy" class="w-40 h-52 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804625/assets/images/punjabi/chicken_karahi_oxzmgn.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="punjabi_img">
+                            <img loading="lazy" class="w-40 h-52 object-contain object-center hidden sm:block"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804633/assets/images/punjabi/pratha_n8n7wm.jpg"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="punjabi_content flex items-center justify-evenly -translate-y-14">
+
+                        <div class="punjabi_img hidden sm:block  ">
+                            <img loading="lazy" class="w-40 object-cover object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804631/assets/images/punjabi/haleem_ke23wb.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="punjabi_img hidden sm:block">
+                            <img loading="lazy" class="w-40 h-52 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804627/assets/images/punjabi/gulab_jamuns_rxzivb.jpg"
+                                alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="slide slide_3 flex-[1_0_100%] w-full relative">
+                <div
+                    class="sindhi_txt absolute top-[170%] -left-[30%] sm:-left-[15%] transform -translate-y-1/2 rotate-90 opacity-0">
+                    <h1 class="text-8xl uppercase">sindhi</h1>
+                </div>
+
+                <div class="sindhi sm:mt-0 mt-10">
+                    <div
+                        class="sindhi_content flex sm:items-center items-end flex-col sm:flex-row sm:justify-evenly justify-center">
+
+                        <div class="sindhi_img">
+                            <img loading="lazy" class="w-40 h-52 object-cover object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804647/assets/images/sindhi/sindhi_boy1_kxdpbi.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="sindhi_img">
+                            <img loading="lazy" class="w-44 sm:mt-0 mt-6 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804650/assets/images/sindhi/sindhi_girl1_umfanu.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="sindhi_img hidden sm:block">
+                            <img loading="lazy" class="w-60 h-60 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804649/assets/images/sindhi/sindhi_boy2_cncbjo.jpg"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="sindhi_content flex items-center justify-end sm:justify-evenly">
+
+                        <div class="sindhi_img hidden sm:block">
+                            <img loading="lazy" class="w-40 object-cover object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804650/assets/images/sindhi/sindhi_girl2_qv1c2w.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="sindhi_img wiggle_effect">
+                            <img loading="lazy" class="w-48 h-52 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804643/assets/images/sindhi/biryani_tuobwm.png"
+                                alt="">
+                        </div>
+
+                        <div class="sindhi_img">
+                            <img loading="lazy" class="w-40 h-52 object-contain object-center hidden sm:block"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804642/assets/images/sindhi/cadhi_qrt0vh.jpg"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="sindhi_content flex items-center justify-evenly -translate-y-14">
+
+                        <div class="sindhi_img hidden sm:block  ">
+                            <img loading="lazy" class="w-40 object-cover object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804645/assets/images/sindhi/daal_qdoe1i.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="sindhi_img hidden sm:block">
+                            <img loading="lazy" class="w-40 h-52 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804645/assets/images/sindhi/faloda_yafujs.jpg"
+                                alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="slide slide_4 flex-[1_0_100%] w-full relative">
+                <div
+                    class="balochi_txt absolute top-[170%] -left-[35%] sm:-left-[15%] transform -translate-y-1/2 rotate-90 opacity-0">
+                    <h1 class="sm:text-7xl text-8xl uppercase havelock">balochi</h1>
+                </div>
+
+                <div class="balochi sm:mt-0 mt-10">
+                    <div
+                        class="balochi_content flex sm:items-center items-end flex-col sm:flex-row sm:justify-evenly justify-center">
+
+                        <div class="balochi_img ">
+                            <img loading="lazy" class="w-40 h-52 object-cover object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804588/assets/images/balochi/balochi_boy1_lq6bzj.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="balochi_img">
+                            <img loading="lazy" class="w-40 sm:w-44 sm:mt-0 mt-6 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804588/assets/images/balochi/balochi_women1_jihlct.webp"
+                                alt="">
+                        </div>
+
+                        <div class="balochi_img hidden sm:block  ">
+                            <img loading="lazy" class="w-60 h-60 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804588/assets/images/balochi/balochi_boy2_fg3bk9.jpg"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="balochi_content flex items-center justify-end sm:justify-evenly">
+
+                        <div class="balochi_img hidden sm:block">
+                            <img loading="lazy" class="w-40 h-40 object-cover object-top"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804592/assets/images/balochi/balochi_women2_agt1de.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="balochi_img  ">
+                            <img loading="lazy" class="w-48 h-44 sm:mt-0 mt-3 sm:h-52 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804590/assets/images/balochi/chargha_wsxfd4.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="balochi_img">
+                            <img loading="lazy" class="w-40 h-52 object-contain object-center hidden sm:block"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804591/assets/images/balochi/lamb_yx4pwg.webp"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="balochi_content flex items-center justify-evenly -translate-y-14">
+
+                        <div class="balochi_img hidden sm:block">
+                            <img loading="lazy" class="w-40 object-cover object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804593/assets/images/balochi/tikka_lw4frd.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="balochi_img hidden sm:block  wiggle_effect">
+                            <img loading="lazy" class="w-40 h-52 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804592/assets/images/balochi/lassi_yxeljc.jpg"
+                                alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="slide slide_5 flex-[1_0_100%] w-full relative">
+                <div
+                    class="pashto_txt absolute top-[170%] -left-[35%] sm:-left-[15%] transform -translate-y-1/2 rotate-90 opacity-0">
+                    <h1 class="text-9xl uppercase dancing_font">pashto</h1>
+                </div>
+
+                <div class="pashto sm:mt-0 mt-10">
+                    <div
+                        class="pashto_content flex sm:items-center items-end flex-col sm:flex-row sm:justify-evenly justify-center">
+
+                        <div class="pashto_img wiggle_effect">
+                            <img loading="lazy" class="w-40 h-52 object-cover object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804615/assets/images/pashto/pashto_boy1_ks5vx4.webp"
+                                alt="">
+                        </div>
+
+                        <div class="pashto_img">
+                            <img loading="lazy" class="w-40 sm:w-44 sm:mt-0 mt-6 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804624/assets/images/pashto/pashto_girl1_hylhum.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="pashto_img hidden sm:block  ">
+                            <img loading="lazy" class="w-60 h-60 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804618/assets/images/pashto/pashto_boy2_hghm7t.jpg"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="pashto_content flex items-center justify-end sm:justify-evenly">
+
+                        <div class="pashto_img hidden sm:block  ">
+                            <img loading="lazy" class="w-40 h-40 object-cover object-top"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804620/assets/images/pashto/pashto_girl2_lgovig.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="pashto_img">
+                            <img loading="lazy" class="w-48 h-44 sm:mt-0 mt-3 sm:h-52 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804611/assets/images/pashto/dumpukht_sad70e.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="pashto_img wiggle_effect">
+                            <img loading="lazy" class="w-40 h-52 object-contain object-center hidden sm:block"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804614/assets/images/pashto/mandi_fsgqox.jpg"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="pashto_content flex items-center justify-evenly -translate-y-14">
+
+                        <div class="pashto_img hidden sm:block">
+                            <img loading="lazy" class="w-40 object-cover object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804613/assets/images/pashto/Chapli_Kebab_c0c0qm.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="pashto_img hidden sm:block">
+                            <img loading="lazy" class="w-40 h-52 object-contain object-center"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804621/assets/images/pashto/Sabaz_chai_djzxiq.png"
+                                alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+        <!-- % dedication -->
+        <section class="panel panel_4 w-full min-h-screen relative bg-green-300 overflow-hidden">
+
+            <div class="tribute_to_heroes relative z-[90] grid w-full h-screen pt-5">
+                <div class="cursor-default overflow-x-auto overflow-y-hidden slide1">
+                    <h1
+                        class="text-[40vw] leading-[40vw] sm:text-[17vw] sm:leading-[15vw] md:text-[13vw] xl:leading-[22.7vh] md:leading-[11vw] flex items-center gap-6 w-full slide1_h1_one font_bodoni -translate-x-full">
+                        <span class="relative">
+                            <img class="absolute -top-2 -left-2 w-20" loading="lazy"
+                                src="./assets/icons/green_flower.png" alt="">
+                            <span>Tribute</span>
+                        </span>
+                        <span class="text_stroke_green uppercase">to</span>
+                        <span class="relative">
+                            <span>National</span>
+                            <img class="absolute top-0 right-0 w-20" loading="lazy"
+                                src="./assets/icons/white_flower.png" alt="">
+                        </span>
+                        <span class="relative">
+                            <img class="absolute -top-2 -left-2 w-20" loading="lazy"
+                                src="./assets/icons/green_flower.png" alt="">
+                            <span>Tribute</span>
+                        </span>
+                        <span class="text_stroke_green uppercase">to</span>
+                        <span class="relative">
+                            <span>National</span>
+                            <img class="absolute top-0 right-0 w-20" loading="lazy"
+                                src="./assets/icons/white_flower.png" alt="">
+                        </span>
+                        <span class="relative">
+                            <img class="absolute -top-2 -left-2 w-20" loading="lazy"
+                                src="./assets/icons/green_flower.png" alt="">
+                            <span>Tribute</span>
+                        </span>
+                        <span class="text_stroke_green uppercase">to</span>
+                        <span class="relative">
+                            <span>National</span>
+                            <img class="absolute top-0 right-0 w-20" loading="lazy"
+                                src="./assets/icons/white_flower.png" alt="">
+                        </span>
+                    </h1>
+                </div>
+                <div class="cursor-default overflow-x-auto overflow-y-hidden slide2 py-4">
+                    <h1
+                        class="text-[40vw] leading-[40vw] sm:text-[17vw] sm:leading-[15vw] md:text-[13vw] xl:leading-[22.7vh] md:leading-[11vw] flex items-center gap-6 w-full slide2_h1_one dancing_font">
+                        <span class="text_stroke_green">Heroes</span>
+                        <span class=" uppercase">of</span>
+                        <span class="text_stroke_green">Pakistan,</span>
+                        <span>Heroes</span>
+                        <span class="text_stroke_green uppercase">of</span>
+                        <span>Pakistan,</span>
+                        <span>Heroes</span>
+                        <span class="text_stroke_green uppercase">of</span>
+                        <span>Pakistan,</span>
+                    </h1>
+                </div>
+                <div class="cursor-default overflow-x-auto overflow-y-hidden slide1">
+                    <h1
+                        class="text-[40vw] leading-[40vw] sm:text-[17vw] sm:leading-[15vw] md:text-[13vw] xl:leading-[22.7vh] md:leading-[11vw] flex items-center w-full slide1_h1_one havelock -translate-x-full">
+                        <span class="relative">
+                            <img class="absolute top-2.5 left-4 w-28" loading="lazy"
+                                src="./assets/icons/white_flower.png" alt="">
+                            <span>on</span>
+                        </span>
+                        <span class="text_stroke_green">77<sup class="text-6xl">th</sup></span>
+                        <span class="relative">
+                            <span>Independence</span>
+                            <img class="absolute top-0 right-0 w-20" loading="lazy"
+                                src="./assets/icons/green_flower.png" alt="">
+                        </span>
+                        <span class="relative">
+                            <img class="absolute top-2.5 left-4 w-28" loading="lazy"
+                                src="./assets/icons/white_flower.png" alt="">
+                            <span>on</span>
+                        </span>
+                        <span class="text_stroke_green uppercase">77<sup class="text-6xl">th</sup></span>
+                        <span class="relative">
+                            <span>Independence</span>
+                            <img class="absolute top-0 right-0 w-20" loading="lazy"
+                                src="./assets/icons/green_flower.png" alt="">
+                        </span>
+                        <span class="relative">
+                            <img class="absolute top-2.5 left-4 w-28" loading="lazy"
+                                src="./assets/icons/white_flower.png" alt="">
+                            <span>on</span>
+                        </span>
+                        <span class="text_stroke_green uppercase">77<sup class="text-6xl">th</sup></span>
+                        <span class="relative">
+                            <span>Independence</span>
+                            <img class="absolute top-0 right-0 w-20" loading="lazy"
+                                src="./assets/icons/green_flower.png" alt="">
+                        </span>
+                    </h1>
+                </div>
+            </div>
+
+            <div style="--clip: 100%"
+                class="tribute_video_wrapper transform will-change-transform origin-center scale-1 w-full h-screen absolute top-0 left-0 cursor-none z-[100]">
+                <video autoplay loop muted
+                    class="tribute_video w-full min-h-screen aspect-video object-cover object-center"
+                    src="https://res.cloudinary.com/dje7ukgcq/video/upload/v1723804305/assets/tribute_heroes_bq1jsm.mp4"></video>
+                <div
+                    class="absolute z-50 tribute_video_volume opacity-0 scale-0 rotate-0 flex justify-center items-center size-9 top-0 left-0 bg-[#00401A]">
+                    <i class="ri-volume-mute-line text-white text-xl"></i>
+                </div>
+            </div>
+
+            <div class="tribute_to_heroes_imgs">
+
+                <div class='tribute_to_heroes_img z-[200] absolute left-20 top-[150%] w-40'>
+                    <img loading="lazy" class=''
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804636/assets/images/quaid_e_azam_zsynl3.jpg"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute right-20 top-[150%] w-40'>
+                    <img loading="lazy" class='w-full object-cover object-center'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804586/assets/images/Allama_Iqbal_rgb0a5.jpg"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute left-16 top-[150%] w-40'>
+                    <img loading="lazy" class=''
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804604/assets/images/Liaquat_Ali_Khan_g4hqrh.webp"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute right-16 top-[150%] w-40'>
+                    <img loading="lazy" class='w-full object-cover object-center'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804599/assets/images/fatima_jinnah_dpifii.jpg"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute left-24 top-[150%] w-40'>
+                    <img loading="lazy" class=''
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804596/assets/images/Choudhry_Rahmat_Ali_k06ixl.jpg"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute right-24 top-[150%] w-40'>
+                    <img loading="lazy" class='w-full object-cover object-center'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804598/assets/images/Bhutto_Benazir_xuhddi.gif"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute left-20 top-[150%] w-40'>
+                    <img loading="lazy" class=''
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804637/assets/images/Raja_Aziz_Bhatti_bb5i42.jpg"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute right-20 top-[150%] w-40'>
+                    <img loading="lazy" class='w-full object-cover object-center'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804639/assets/images/rashid_minhas_zvimfc.jpg"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute left-28 top-[150%] w-40'>
+                    <img loading="lazy" class=''
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804588/assets/images/Abdul_Sattar_Edhi_egszw6.jpg"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute right-28 top-[150%] w-40'>
+                    <img loading="lazy" class='w-full object-cover object-center'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804587/assets/images/AQ_Khan_rc46g2.jpg"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute left-16 top-[150%] w-40'>
+                    <img loading="lazy" class=''
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804608/assets/images/ma_malaam_odee0g.jpg"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute right-16 top-[150%] w-40'>
+                    <img loading="lazy" class='w-full object-cover object-center'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804604/assets/images/karnal_sher_khan_dtj6se.jpg"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute left-36 top-[150%] w-40'>
+                    <img loading="lazy" class=''
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804587/assets/images/arfa_karim_vh4f7q.jpg"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute right-36 top-[150%] w-40'>
+                    <img loading="lazy" class='w-full object-cover object-center'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804606/assets/images/marium_mukhtiar_vnwp7g.jpg"
+                        alt="">
+                </div>
+
+                <div class='tribute_to_heroes_img z-[200] absolute left-40 top-[150%] w-40'>
+                    <img loading="lazy" class='w-full object-cover object-center'
+                        src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723804597/assets/images/dr_afia_wndanz.jpg"
+                        alt="">
+                </div>
+
+            </div>
+
+            <div class="">
+                <h1
+                    class="green_pakistan_text text-[16vw] leading-[20vw] sm:text-[12vw] sm:leading-[12vw] font-bold w-fit absolute top-1/2 transform -translate-y-1/2 rounded px-6 pb-7 text_stroke_green uppercase text-center opacity-0">
+                </h1>
+
+                <div class="absolute pl-4">
+                    <div class="plants_imgs hidden sm:flex items-center justify-center">
+
+                        <div class="plant_img invisible w-56 h-72 overflow-y-hidden relative">
+                            <img class="w-full h-full object-cover object-center absolute left-0 top-full"
+                                loading="lazy"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723806244/assets/images/plants/plant_ibjmxr.jpg"
+                                alt="">
+                        </div>
+                        <div class="plant_img invisible w-56 h-72 -translate-x-[2rem] overflow-y-hidden relative">
+                            <img class="w-full h-full object-cover object-center absolute left-0 top-full"
+                                loading="lazy"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723806244/assets/images/plants/plant2_ygodqh.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="plant_img invisible w-56 h-72 -translate-x-[4rem] overflow-y-hidden relative">
+                            <img class="w-full h-full object-cover object-center absolute left-0 top-full"
+                                loading="lazy"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723806244/assets/images/plants/plant_ibjmxr.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="plant_img invisible w-56 h-72 -translate-x-[6rem] overflow-y-hidden relative rotate-[7deg]">
+                            <img class="w-full h-full object-cover object-center absolute left-0 top-full"
+                                loading="lazy"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723806244/assets/images/plants/plant2_ygodqh.jpg"
+                                alt="">
+                        </div>
+
+                        <div
+                            class="plant_img invisible w-56 h-72 -translate-x-[8rem] overflow-y-hidden relative rotate-[5deg]">
+                            <img class="w-full h-full object-cover object-center absolute left-0 top-full"
+                                loading="lazy"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723806244/assets/images/plants/plant_ibjmxr.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="plant_img invisible w-56 h-72 -translate-x-[10rem] overflow-y-hidden relative">
+                            <img class="w-full h-full object-cover object-center absolute left-0 top-full"
+                                loading="lazy"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723806244/assets/images/plants/plant2_ygodqh.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="plants_imgs hidden sm:flex items-center justify-center">
+
+                        <div class="plant_img invisible w-56 h-72 overflow-y-hidden relative">
+                            <img class="w-full h-full object-cover object-center absolute left-0 top-full"
+                                loading="lazy"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723806244/assets/images/plants/plant_ibjmxr.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="plant_img invisible w-56 h-72 -translate-x-[2rem] overflow-y-hidden relative rotate-[8deg]">
+                            <img class="w-full h-full object-cover object-center absolute left-0 top-full"
+                                loading="lazy"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723806244/assets/images/plants/plant2_ygodqh.jpg"
+                                alt="">
+                        </div>
+
+                        <div
+                            class="plant_img invisible w-56 h-72 -translate-x-[4rem] overflow-y-hidden relative rotate-[6deg]">
+                            <img class="w-full h-full object-cover object-center absolute left-0 top-full"
+                                loading="lazy"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723806244/assets/images/plants/plant_ibjmxr.jpg"
+                                alt="">
+                        </div>
+                        <div class="plant_img invisible w-56 h-72 -translate-x-[6rem] overflow-y-hidden relative">
+                            <img class="w-full h-full object-cover object-center absolute left-0 top-full"
+                                loading="lazy"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723806244/assets/images/plants/plant2_ygodqh.jpg"
+                                alt="">
+                        </div>
+
+                        <div
+                            class="plant_img invisible w-56 h-72 -translate-x-[8rem] overflow-y-hidden relative rotate-[4deg]">
+                            <img class="w-full h-full object-cover object-center absolute left-0 top-full"
+                                loading="lazy"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723806244/assets/images/plants/plant_ibjmxr.jpg"
+                                alt="">
+                        </div>
+
+                        <div
+                            class="plant_img invisible w-56 h-72 -translate-x-[10rem] overflow-y-hidden relative rotate-[7deg]">
+                            <img class="w-full h-full object-cover object-center absolute left-0 top-full"
+                                loading="lazy"
+                                src="https://res.cloudinary.com/dje7ukgcq/image/upload/v1723806244/assets/images/plants/plant2_ygodqh.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- % green pakistan -->
+        <section class="panel panel_5 w-full relative bg-zinc-900 cursor-none">
+            <div class="green_pakistan relative top-0 left-0 w-full h-[600vh]">
+                <div class="w-full sticky top-0 left-0 h-screen">
+                    <canvas class="h-screen w-full"></canvas>
+                </div>
+            </div>
+            <div
+                class="fixed size-20 top-0 left-0 bg-[#00401A] rounded-tr-[0.5rem] rounded-bl-[0.5rem] rounded-tl-[7rem] rounded-br-[7rem] text-sm text-white text-center z-50 mousemove_box2 hidden">
+                <span
+                    class="dancing_font absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-45 transition-all will-change-transform">Scroll
+                    to Play</span>
+            </div>
+            <div class='poster_canvas hidden rotate-90 fixed -left-10 top-4 w-28'>
+                <img loading="lazy" class='w-full' src="./assets/icons/poster.png" alt="">
+                <span class='text-[10px] text-center font-bold absolute top-2 rotate-180'>Scroll Smooth for better
+                    experience</span>
+            </div>
+        </section>
+
+        <!-- % good citizen -->
+        <section class='panel panel_6 w-full flex justify-center items-center min-h-screen relative overflow-hidden'>
+            <div>
+                <svg class="-rotate-[27deg] -translate-x-[10%] sm:translate-x-0 pak_flag_svg overflow-scroll"
+                    xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 512 512" height="450"
+                    xmlns:v="https://vecta.io/nano">
+                    <path class="path_1 scroll_path_1" fill="#343e47"
+                        d="M513 313.546c-25.018.988-44.274 11.133-57.988 32.725-7.84 12.345-12.852 25.251-15.464 39.434-2.156 11.704-9.373 20.618-17.006 29.252-11.829 13.38-21.371 28.239-28.898 44.457-4.244 9.143-9.056 18.022-13.895 27.576-4.927-7.494-9.084-14.406-13.824-20.892-7.902-10.811-15.519-21.947-24.484-31.833-8.775-9.676-18.705-18.423-28.826-26.726-10.659-8.745-23.634-13.022-36.862-16.575-14.705-3.95-28.191-10.516-40.42-19.75-8.272-6.246-13.012-14.892-17.351-23.84-.507-1.044.928-3.552 2.089-4.797 6.229-6.678 10.5-14.363 13.073-23.111 1.332-4.529-.089-7.814-3.774-10.284l-28.521-18.863c-18.756-11.719-38.196-22.075-59.279-29.144-4.714-1.58-6.954-.777-9.269 3.851l-38.732 75.898-29.922 60.852-33.597 71.125-14.765 32.606c-2.252 5.034-4.801 5.711-9.001 2.215-1.521-1.266-3.051-2.52-4.93-3.751C1 500.307 1 496.614 1 492.461c3.145-5.754 6.672-10.862 9.354-16.381 5.655-11.636 10.629-23.603 16.304-35.229l61.408-124.848 51.719-99.481 35.135-68.291 43.501-85.289 17.975-36.097c.985-2.047 1.264-4.761.952-7.041-.881-6.446 3.011-12.784 9.403-14.524 6.755-1.839 13.302 1.064 15.844 7.026 2.876 6.743.829 13.562-5.102 16.855-2.251 1.25-5.204 1.871-6.705 3.705-3.172 3.874-3.64 7.981-.227 12.663 5.712 7.833 11.973 14.981 19.98 20.48 14.488 9.95 28.805 19.964 45.083 27.215 13.404 5.971 26.275 13.621 38.303 22.064 12.232 8.586 21.326 20.502 21.707 36.254.132 5.453-3.34 11.163-5.803 16.459-2.226 4.787-5.126 9.303-8.093 13.692-2.573 3.806-1.448 6.61 1.148 9.787 11.675 14.284 26.689 23.322 43.816 29.762 14.252 5.359 28.463 11.188 41.832 18.404 8.899 4.804 16.375 12.301 24.326 18.79 15.196 12.401 27.823 27.021 37.509 44.132.367.648 1.266.995 2.274 1.458.357 3.005.357 6.036.357 9.521M238.532 36.359l-4.08-.585c.762 1.953 1.218 3.123.965 4.671-1.442.931-3.428 1.538-4.215 2.859-1.774 2.976-2.815 6.378-4.399 9.481l-97.1 190.096-2.797 5.546c7.459 5.208 8.784 4.84 11.889-2.689 1.076-2.609 2.221-5.202 3.515-7.709l90.36-175.067c3.16-6.128 6.054-12.392 8.787-18.008-2.118-1.939-3.776-3.457-4.726-5.232l6.477 2.034.391-1.328c-.889-.83-1.778-1.66-2.111-3.144 6.594 2.003 4.805-4.314 7.123-6.311l-8.61-4.92c-2.14 2.927-3.746 5.856-1.469 10.308m10.715-28.538c-1.09.374-2.18.747-3.974 1.199-5.155 4.022-6.47 8.854-3.756 13.807 2.262 4.129 7.519 6.17 11.992 4.655 4.866-1.647 8.036-6.535 7.236-11.157-.973-5.622-4.631-8.483-11.499-8.504m8.749 325.182s.019.028.593-.309c14.451-13.169 24.752-29.502 35.036-45.858 3.631-5.774 7.424-11.446 11.136-17.169l25.953-40.228c6.491-10.647 12.027-21.871 18.231-32.699l20.725-35.275c3.334-5.838 3.086-12.095.847-18.361-3.998-11.192-11.122-19.965-20.664-26.858-3.01-2.175-6.185-4.123-9.641-6.411l-2.692 5.301-49.728 105.706c-6.33 12.933-14.436 25.138-22.87 36.856-6.76 9.391-15.241 17.544-23.52 26.609l-17.131 18.168c.985.663 1.89 1.13 2.624 1.789 6.533 5.867 13.339 11.472 19.441 17.76 4.123 4.249 8.813 8.771 7.838 16.276.947-1.408 1.893-2.816 3.232-4.528.25-.222.455-.48.588-.768M155.065 224.066l24.102-37.708c15.332-23.68 30.248-47.576 39.844-74.326l14.84-41.437-1.566-.623c-.723 1.232-1.51 2.432-2.161 3.701l-22.027 43.045-41.895 82.771-12.766 24.813-1.055 2.735.747.278c.445-.985.89-1.969 1.936-3.248m85.83 55.805c14.182-13.533 26.218-28.708 35.976-45.764 23.003-40.206 41.815-82.395 59.677-125.044.163-.389.02-.907.02-1.384-16.671-8.94-33.451-17.382-49.669-26.793-15.866-9.206-31.161-19.393-40.753-35.888-.274-.472-.935-.719-1.924-1.443-1.552 4.689-3.308 8.844-4.301 13.173-9.213 40.168-23.528 78.278-45.546 113.276l-44.147 69.028-12.414 17.404 8.64 2.935c25.3 8.973 48.071 22.74 70.257 37.509 4.366 2.907 7.181 2.196 10.187-1.238l13.995-15.771m204.615-37.36l-46.655-20.401c-12.687-5.621-25.093-11.656-33.695-23.288-2.313-3.127-5.258-5.787-8.548-9.349l-9.929 16.206-26.188 45.391c-6.289 10.377-13.866 19.975-20.123 30.369-13.008 21.61-27.42 42.015-45.14 60.143-7.256 7.423-15.069 11.105-25.908 10.314l-4.527-.725-.975 1.326c2.588 3.531 4.744 7.506 7.839 10.517 12.749 12.401 28.382 19.915 45.438 23.859 25.083 5.801 44.727 20.115 62.077 38.047 13.199 13.643 24.921 28.566 34.506 45.06 1.549 2.665 3.476 5.111 5.951 8.709l9.975-20.196c7.558-16.246 16.891-31.348 29.027-44.565 9.533-10.382 16.54-21.737 19.048-36.012 3.672-20.895 14.533-38.07 30.203-52.16 7.794-7.008 16.594-12.109 27.491-12.863 4.397-.305 8.727-1.59 13.677-2.543-.646-1.804-.886-3.299-1.644-4.452-4.66-7.092-8.651-14.836-14.351-20.986-9.913-10.696-20.734-20.581-31.524-30.422-4.737-4.32-10.334-7.695-16.025-11.979M94.3 330.798l36.564-70.397-8.915-2.218c-.447.66-.765 1.044-.991 1.475-40.799 77.947-79.896 156.727-115.85 237.042-2.14 4.78-.903 7.027 4.416 8.803L94.3 330.798m144.477 17.99c5.815-1.853 11.765-8.819 11.922-13.958.125-4.071-8.291-15.076-12.25-16.718l-15.451 27.979c3.964 3.602 9.513 2.927 15.779 2.697m-107.606-95.367l-5.726-2.63-2.641 6.186c3.835 0 6.784.5 9.442-.164 2.009-.502 3.012-2.414-1.074-3.392z" />
+                    <path class="path_2 scroll_path_2" fill="#25663a"
+                        d="M230.047 352.056c10.115.632 17.928-3.05 25.184-10.474 17.72-18.128 32.131-38.533 45.14-60.143 6.257-10.394 13.834-19.992 20.123-30.369 9.052-14.935 17.434-30.274 26.188-45.391 3.052-5.27 6.357-10.393 9.929-16.206 3.29 3.561 6.235 6.221 8.548 9.349 8.603 11.632 21.008 17.666 33.695 23.288l46.969 21.004c1.387 3.578 2.606 6.51 3.51 9.535 5.622 18.819 3.201 36.343-9.376 51.741-6.511 7.971-13.66 15.443-20.802 22.87-15.562 16.182-26.624 34.687-31.545 56.847-2.09 9.41-5.371 18.556-13.323 25.168-6.479 5.388-11.167 5.952-17.373.916-5.418-4.396-10.552-9.14-15.885-13.642-11.187-9.444-23.51-16.804-37.759-20.732l-58.151-16.428c-5.282-1.584-10.062-4.842-15.072-7.331m165.704-4.335l-4.287 1.322c-23.059 6.459-46.772-6.573-53.62-29.458-6.841-22.861 5.84-46.879 28.596-54.126 2.143-.682 4.329-1.228 7.177-2.028-24.023-3.679-45.393 8.489-54.027 30.203-8.378 21.072-.84 45.402 18.057 58.279 18.418 12.551 45.287 10.8 59.929-3.976l.021-.704-1.846.489m6.419-39.879l5.348-2.906 6.964 6.2c-2.65-7.691.631-12.033 9.034-14.789l-11.075-1.833-2.181-9.02-1.176-.605c-.913 8.647-6.328 9.666-13.683 8.365 7.531 4.275 7.01 9.657 2.243 16.535l4.526-1.947z" />
+                    <path class="path_3 scroll_path_white" fill="#faf3e8"
+                        d="M150.81 238.664l43.566-68.661c22.018-34.998 36.333-73.108 45.546-113.276.993-4.329 2.749-8.483 4.301-13.173.989.724 1.649.971 1.924 1.443 9.592 16.495 24.887 26.682 40.753 35.888 16.218 9.41 32.997 17.853 49.669 26.793 0 .477.143.995-.02 1.384-17.862 42.649-36.674 84.838-59.677 125.044-9.759 17.056-21.794 32.231-36.57 45.742-2.929-2.137-5.163-4.377-7.614-6.347-18.827-15.139-40.27-24.902-63.61-30.686-6.06-1.502-12.176-2.773-18.266-4.151z" />
+                    <path class="path_4 scroll_path_3" fill="#18562d"
+                        d="M229.685 351.977c5.372 2.569 10.152 5.827 15.433 7.411 19.291 5.785 38.732 11.075 58.151 16.428 14.249 3.928 26.572 11.289 37.759 20.732l15.885 13.642c6.207 5.036 10.894 4.472 17.373-.916 7.952-6.612 11.234-15.757 13.323-25.168 4.921-22.16 15.983-40.666 31.545-56.847 7.142-7.427 14.292-14.899 20.802-22.87 12.578-15.398 14.998-32.922 9.376-51.741-.904-3.026-2.123-5.957-3.268-9.295 5.135 3.441 10.732 6.817 15.469 11.136 10.79 9.841 21.611 19.725 31.524 30.422 5.7 6.15 9.69 13.894 14.351 20.986.758 1.154.998 2.649 1.644 4.452-4.95.953-9.28 2.238-13.677 2.543-10.898.755-19.697 5.855-27.491 12.863-15.67 14.09-26.531 31.266-30.203 52.16-2.509 14.275-9.516 25.63-19.048 36.012-12.136 13.217-21.469 28.319-29.027 44.565-2.991 6.43-6.273 12.725-9.975 20.196-2.475-3.598-4.402-6.043-5.951-8.709-9.585-16.495-21.307-31.418-34.506-45.06-17.35-17.933-36.994-32.247-62.077-38.047-17.056-3.944-32.689-11.458-45.438-23.859-3.095-3.01-5.251-6.985-7.839-10.517l.975-1.326 4.889.805z" />
+                    <path class="path_5 scroll_zoom" fill="#246639"
+                        d="M241.966 283.944c7.717-8.703 16.198-16.855 22.958-26.247 8.434-11.718 16.54-23.923 22.87-36.856l49.728-105.706c.694-1.483 1.481-2.923 2.692-5.301 3.457 2.288 6.631 4.236 9.641 6.411 9.542 6.893 16.665 15.665 20.664 26.858 2.239 6.266 2.487 12.523-.847 18.361l-20.725 35.275c-6.204 10.828-11.74 22.052-18.231 32.699-8.304 13.621-17.269 26.839-25.953 40.228l-11.136 17.169c-10.284 16.356-20.585 32.689-35.328 45.592-.149-1.578-.006-2.889.139-4.2 1.937-17.524-4.484-31.938-16.47-44.283z" />
+                    <path class="path_6 scroll_path_white" fill="#e9e0d6"
+                        d="M150.519 238.848c6.381 1.194 12.497 2.466 18.557 3.967 23.34 5.783 44.783 15.546 63.61 30.686 2.45 1.97 4.685 4.21 7.327 6.505-4.164 5.334-8.62 10.502-13.114 15.636-3.006 3.434-5.821 4.145-10.187 1.238-22.185-14.769-44.957-28.536-70.257-37.509l-8.64-2.935 12.704-17.588z" />
+                    <path class="path_7 scroll_path_stick" fill="#d0d5dc"
+                        d="M94.146 331.133L9.524 505.504c-5.32-1.777-6.556-4.024-4.416-8.803 35.955-80.315 75.052-159.094 115.85-237.042.226-.431.544-.815.991-1.475l8.915 2.218-36.717 70.732z" />
+                    <path class="path_8 scroll_path_stick" fill="#d1d5dc"
+                        d="M236.024 39.979l5.433 4.974-8.787 18.008-90.36 175.067-3.515 7.709c-3.106 7.529-4.43 7.896-11.889 2.689l2.797-5.546 97.1-190.096c1.584-3.103 2.625-6.505 4.399-9.481.788-1.321 2.773-1.928 4.551-3.079.336-.22.27-.246.27-.246z" />
+                    <path class="path_9" fill="#fff"
+                        d="M153.902 223.925l12.301-24.437 41.895-82.771 22.027-43.045c.651-1.269 1.437-2.469 2.161-3.701l1.566.623-14.84 41.437c-9.596 26.751-24.512 50.646-39.844 74.326l-24.544 37.747c-.441.039-.721-.179-.721-.179z" />
+                    <path class="path_10 move_path" fill="#18562d"
+                        d="M241.685 284.125c12.267 12.164 18.689 26.579 16.751 44.102l-.426 4.369c.005.435-.013.407-.199.553-.435.37-.638.63-.795.926l-2.84 4.225c.975-7.506-3.715-12.027-7.838-16.276-6.102-6.288-12.908-11.894-19.441-17.76-.733-.659-1.639-1.126-2.624-1.789l17.412-18.349z" />
+                    <path class="path_11 scroll_path_white" fill="#246539"
+                        d="M238.353 348.852c-5.842.166-11.391.842-15.355-2.761l15.451-27.979c3.959 1.642 12.375 12.647 12.25 16.718-.157 5.139-6.107 12.104-12.346 14.021z" />
+                    <path class="path_12 scroll_stick_part" fill="#d0d4db"
+                        d="M249.968 7.899c6.146-.056 9.805 2.805 10.777 8.427.8 4.622-2.37 9.51-7.236 11.157-4.473 1.514-9.73-.527-11.992-4.655-2.714-4.953-1.4-9.785 4.035-13.476-.086 1.062-.833 1.841-.749 2.516.311 2.509.896 4.985 1.377 7.473 2.472-.569 5.652-.381 7.256-1.879 2.625-2.452 1.312-5.363-1.439-7.476-.761-.585-1.357-1.385-2.029-2.086z" />
+                    <path class="path_13 scroll_stick_part" fill="#edeff2"
+                        d="M249.608 7.86c1.033.74 1.629 1.54 2.39 2.125 2.751 2.113 4.064 5.024 1.439 7.476-1.604 1.498-4.784 1.31-7.256 1.879l-1.377-7.473c-.084-.676.662-1.454 1.1-2.555 1.163-.744 2.253-1.117 3.704-1.452z" />
+                    <path class="path_14 scroll_stick_part" fill="#cbcfd6"
+                        d="M238.896 35.418c-2.641-3.511-1.034-6.44 1.105-9.367l8.61 4.92c-2.318 1.997-.529 8.314-7.37 6.659-.247.348-.235.423.062.124-.572-.974-1.44-1.65-2.352-2.318-.044.006-.055-.018-.055-.018z" />
+                    <path class="path_15 scroll_stick_part" fill="#ddd5cd"
+                        d="M131.529 253.562c3.728.838 2.725 2.75.716 3.251-2.658.664-5.606.164-9.442.164l2.641-6.186 6.084 2.771z" />
+                    <path class="path_16 scroll_stick_part" fill="#d7d3cc"
+                        d="M238.714 35.889c.182-.471.193-.446-.258-.243.549.938 1.55 1.673 2.551 2.408 0 0-.012-.074-.043-.095l2.636 2.469-.391 1.328-6.831-1.905c-.354.129-.288.154-.269.185l-1.656-4.261c1.781.256 2.93.421 4.262.115z" />
+                    <path class="path_17 scroll_stick_part" fill="#fff"
+                        d="M154.323 224.252c-.304 1.093-.749 2.077-1.194 3.062l-.747-.278 1.288-2.923c.232-.188.512.03.653.138z" />
+                    <path class="path_18" fill="#246639"
+                        d="M257.212 333.923c-.039-.144.164-.404.613-.776.038.145-.167.402-.613.776z" />
+                    <path class="path_19 move_path" fill="#fff"
+                        d="M397.046 348.042c-14.112 14.67-40.981 16.42-59.399 3.87-18.897-12.877-26.435-37.207-18.057-58.279 8.634-21.714 30.003-33.882 54.027-30.203l-7.177 2.028c-22.757 7.248-35.437 31.265-28.596 54.126 6.848 22.885 30.562 35.917 53.62 29.458 1.44-.403 2.859-.879 4.794-1.29.506.031.789.29.789.29z" />
+                    <path class="path_20 move_path" fill="#fff"
+                        d="M401.819 307.997l-4.175 1.793c4.767-6.877 5.289-12.26-2.243-16.535 7.355 1.301 12.771.282 13.683-8.365l1.176.605 2.181 9.02 11.075 1.833c-8.404 2.756-11.684 7.098-9.034 14.789l-6.964-6.2-5.699 3.06z" />
+                    <path class="path_21 move_path" fill="#fff"
+                        d="M396.627 347.65c.232-.229.601-.324.97-.418-.007.235-.014.469-.286.757-.265.053-.547-.205-.684-.338z" />
+                </svg>
+            </div>
+            <div>
+                <div
+                    class="white_circle two_circ sm:w-[15vw] w-[35vw] sm:h-[15vw] h-[35vw] bg-[#f8f8f8] rounded-full absolute top-[150%] left-[40%] left-[43%] -translate-x-1/2 -translate-y-1/2">
+                </div>
+                <div
+                    class="green_circle two_circ sm:w-[15vw] w-[35vw] sm:h-[15vw] h-[35vw] bg-[#00401A] absolute top-[150%] left-[60%] left-[55%] -translate-x-1/2 -translate-y-1/2">
+                </div>
+            </div>
+            <div
+                class="good_citizen_text text-6xl sm:text-9xl leading-[1.5] font-bold w-fit absolute top-1/2 left-0 transform -translate-y-1/2 sm:px-6 uppercase text-center">
+                <h1 class="opacity-0 text_stroke -translate-y-[150%]">Come & strive</h1>
+                <h2 class="opacity-0 dancing_font -translate-x-full text-white">to become</h1>
+                    <h3 class="opacity-0 havelock text_stroke translate-x-full text-white">a good</h1>
+                        <h4 class="font_bodoni text-white">Pakistani!</h1>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+
+    <script>
+
+        console.clear();
+
+        Shery.mouseFollower();
+
+        (() => {
+            const lenis = new Lenis({
+                lerp: 0.03,
+                wheelMultiplier: 0.5,
+                touchMultiplier: 5,
+            })
+            function raf(time) {
+                lenis.raf(time)
+                requestAnimationFrame(raf)
+            }
+            requestAnimationFrame(raf)
+        })();
+
+        gsap.registerPlugin(ScrollTrigger);
+    </script>
+
+    <!-- * splitText -->
+    <script src="./js/splitText.js"></script>
+
+    <!-- * media -->
+    <script src="./js/media.js"></script>
+
+    <!-- * effects -->
+    <script src="./js/effects.js"></script>
+
+    <!--@ frames && section 2 -->
+    <script src="./js/frames.js"></script>
+
+    <!--@ green pakistan && section 5 -->
+    <script src="./js/green.js"></script>
+
+    <!-- @ preloader -->
+    <script src="./js/preloader.js"></script>
+
+    <!-- @ index -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
