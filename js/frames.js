@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             const img = new Image();
             img.src = imgUrl;
-            console.log(imgUrl);
+            // console.log(imgUrl);
             img.onload = () => {
                 if (i === end - 1) {
                     // Load the next batch when the current one is fully loaded
