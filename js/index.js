@@ -3,24 +3,18 @@ const selectDomElems = elem => document.querySelector(elem);
 // * btn_down
 const btnDown = selectDomElems('.btn_down');
 let isOnTop = true;
-
-window.addEventListener('DOMContentLoaded', () => {
-
-    btnDown.addEventListener('click', () => {
-
-        if (isOnTop) {
-            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-            btnDown.classList.remove('rotate-0')
-            btnDown.classList.add('-rotate-180')
-            isOnTop = false
-        } else {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            btnDown.classList.remove('-rotate-180')
-            btnDown.classList.add('rotate-0')
-            // btnDown.style.rotate = 0
-            isOnTop = true;
-        }
-    });
+btnDown.addEventListener('click', () => {
+    if (isOnTop) {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        btnDown.classList.remove('rotate-0')
+        btnDown.classList.add('-rotate-180')
+        isOnTop = false
+    } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        btnDown.classList.remove('-rotate-180')
+        btnDown.classList.add('rotate-0')
+        isOnTop = true;
+    }
 });
 
 // * hero

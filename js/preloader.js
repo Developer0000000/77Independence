@@ -11,18 +11,38 @@ const flat2 = 'M0 0S175 10 500 10s500 10 500 10V0H0Z';
 const svg = document.querySelector('#svg');
 const svg2 = document.querySelector('#svg2');
 
+const counter = document.getElementById('counter');
+
+
 (() => {
 
     const tl = gsap.timeline();
 
     tl
+        .to(counter, {
+            innerHTML: 100, // Target value
+            duration: 6, // Duration of the animation
+            ease: 'power2.easeInOut',
+            stagger: 0.5,
+            onUpdate: function () {
+                counter.innerHTML = Math.floor(this.targets()[0].innerHTML); // Update the counter text with an integer value
+            },
+            onComplete: function () {
+                gsap.to(counter, {
+                    opacity: 0,
+                    duration: 1, // Optional: fade out duration
+                    ease: 'power2.easeInOut',
+                });
+            }
+        })
+
         .to(svg, {
-            duration: 0.8,
+            duration: 2,
             attr: { d: curve },
             ease: 'power2.easeIn',
         })
         .to(svg, {
-            duration: 0.8,
+            duration: 2,
             attr: { d: flat },
             ease: 'power2.easeOut',
         })
@@ -49,8 +69,8 @@ const svg2 = document.querySelector('#svg2');
 
         .from('.preloader_text h1 span', {
             opacity: 0,
-            duration: 0.5,
-            stagger: 0.12,
+            duration: 0.7,
+            stagger: 0.15,
             ease: 'power2.easeIn',
             onStart: () => {
                 gsap.to('.preloader_img_1', { opacity: 1, scale: 1, duration: 0.5 });
@@ -62,7 +82,7 @@ const svg2 = document.querySelector('#svg2');
         .from('.preloader_text h2 span', {
             opacity: 0,
             duration: 0.5,
-            stagger: 0.1,
+            stagger: 0.12,
             ease: 'power2.easeIn',
             onStart: () => {
                 gsap.to('.preloader_img_4', { opacity: 1, scale: 1, duration: 0.5 });
@@ -105,12 +125,12 @@ const svg2 = document.querySelector('#svg2');
         })
 
         .to(svg2, {
-            duration: 0.8,
+            duration: 2,
             attr: { d: curve2 },
             ease: 'power2.easeIn',
         })
         .to(svg2, {
-            duration: 0.8,
+            duration: 2,
             attr: { d: flat2 },
             ease: 'power2.easeOut',
         })

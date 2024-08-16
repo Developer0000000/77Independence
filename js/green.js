@@ -7,8 +7,8 @@ let mousemoveBox2 = document.querySelector('.mousemove_box2')
 let mousemoveBoxSpan2 = document.querySelector('.mousemove_box2 span')
 
 const frames2 = {
-    currentIndex: 1,
-    maxIndex: 247,
+    currentIndex: 0,
+    maxIndex: 55,
 }
 
 let imageLoaded2 = 0;
@@ -16,17 +16,9 @@ const images2 = []
 
 const preloadImages2 = () => {
 
-    const cloudinaryBaseURL2 = "https://res.cloudinary.com/dje7ukgcq/image/upload/";
-    const folder2 = "greenary";
-
-    // https://res.cloudinary.com/dje7ukgcq/image/upload/v1723797574/greenary/frame-1.jpg
-    // https://res.cloudinary.com/dje7ukgcq/image/upload/v1723798204/greenary/frame-1.jpg
-
     for (let i = 1; i <= frames2.maxIndex; i++) {
 
-        const publicId2 = `frame-${i}`;
-        const version2 = "v1723798204";
-        const imgUrl = `${cloudinaryBaseURL2}${version2}/${folder2}/${publicId2}.jpg`;
+        const imgUrl = `../assets/green/frame_${i.toString().padStart(4, 0)}.jpeg`;
 
         const img = new Image();
         img.src = imgUrl;
